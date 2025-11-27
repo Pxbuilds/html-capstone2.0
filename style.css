@@ -77,10 +77,10 @@ p {
     width: 0;
   }
   40% {
-    width: 15ch; /* Adjust to match the length of longest word + buffer */
+    width: 13ch; /* Adjust to match the length of longest word + buffer */
   }
   60% {
-    width: 9ch; /* Pause before deleting */
+    width: 13ch; /* Pause before deleting */
   }
   100% {
     width: 0;
@@ -105,10 +105,10 @@ label {
 
 input,
 textarea {
-  padding: 10px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Science Gothic", sans-serif;
 }
 
