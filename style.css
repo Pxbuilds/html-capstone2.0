@@ -58,15 +58,15 @@ p {
 @keyframes text-cycle {
   0%,
   33.33% {
-    content: "< Web Developer />";
+    content: "< web developer />";
   }
   33.34%,
   66.66% {
-    content: "< Crypto Trader />";
+    content: "< crypto trader />";
   }
   66.67%,
   100% {
-    content: "< Techpreneur />";
+    content: "< techpreneur />";
   }
 }
 
