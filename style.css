@@ -1,0 +1,133 @@
+html,
+body {
+  height: 100%;
+}
+
+.top-container {
+  background-color: ;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Science Gothic", sans-serif;
+}
+
+.container {
+  max-width: 700px;
+}
+
+div {
+  display: block;
+}
+
+p {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* 2. The Typewriter Element */
+.typewriter {
+  position: relative;
+  color: rgb(55, 166, 105); /* Highlight color */
+  font-weight: bold;
+}
+
+/* 3. The Pseudo-element (The "Typer") */
+.typewriter::before {
+  content: "";
+  /* Animation Breakdown:
+               - text-cycle: Switches the words (12s total cycle)
+               - type-effect: Handles the typing/deleting width (4s per word)
+               - blink: Flashes the cursor
+            */
+  animation: text-cycle 12s linear infinite, type-effect 4s steps(20) infinite,
+    blink 500ms step-end infinite alternate;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgb(55, 166, 105); /* The Cursor */
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+}
+
+/* 4. Keyframes: Text Switching */
+/* Changes the content at specific intervals */
+@keyframes text-cycle {
+  0%,
+  33.33% {
+    content: "< Web Developer />";
+  }
+  33.34%,
+  66.66% {
+    content: "< Crypto Trader />";
+  }
+  66.67%,
+  100% {
+    content: "< Techpreneur />";
+  }
+}
+
+/* 5. Keyframes: Typing Action */
+/* Controls the width to reveal/hide text */
+@keyframes type-effect {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 15ch; /* Adjust to match the length of longest word + buffer */
+  }
+  60% {
+    width: 9ch; /* Pause before deleting */
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* 6. Keyframes: Cursor Blinking */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Science Gothic", sans-serif;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background: rgb(55, 166, 105);
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
